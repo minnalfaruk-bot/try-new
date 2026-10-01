@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#090014" />
+  <title>Jamal Kaliba Ashik Ali & Arshul Sugaral Shifana — Nikah</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="loader"><div class="loader-ring"></div><span>Preparing your invitation</span></div>
+
+  <!-- Luxury ZIP-style opening screen -->
+  <section class="start-screen" id="startScreen" aria-label="Open wedding invitation">
+    <div class="start-vignette"></div>
+    <div class="start-halo start-halo-one"></div>
+    <div class="start-halo start-halo-two"></div>
+
+    <div class="zip-card" id="zipCard">
+      <div class="zip-inner">
+        <div class="zip-border zip-border-outer"></div>
+        <div class="zip-border zip-border-inner"></div>
+
+        <div class="zip-top-panel">
+          <div class="zip-top-ornament">✦</div>
+          <div class="zip-top-label">PRIVATE NIKAH INVITATION</div>
+          <div class="zip-monogram">A <span>♥</span> S</div>
+          <div class="zip-names">Jamal Ashik <i>&amp;</i> Shifana</div>
+        </div>
+
+        <div class="zip-center-panel">
+          <div class="zip-track" aria-hidden="true"><span class="zip-pull"></span></div>
+          <div class="zip-seal">A<span>♥</span>S</div>
+          <div class="zip-kicker">A BEAUTIFUL BEGINNING</div>
+          <div class="zip-title">Our Nikah</div>
+          <button class="start-button" id="startInvitation" type="button" aria-label="Start and open invitation">
+            <span>START</span><b>↓</b>
+          </button>
+          <div class="zip-hint">CLICK TO OPEN</div>
+        </div>
+
+        <div class="zip-bottom-panel">
+          <span>15 · 11 · 2026</span>
+          <span>10:00 AM</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ambient ambient-1"></div>
+  <div class="ambient ambient-2"></div>
+  <canvas id="particles"></canvas>
+  <div class="grain"></div>
+
+  <header class="topbar">
+    <div class="monogram">A<span>♥</span>S</div>
+    <button class="sound-btn" id="soundBtn" aria-label="Toggle music">♫</button>
+  </header>
+
+  <main>
+    <section class="hero section-dark">
+      <div class="palace-door door-left"></div>
+      <div class="palace-door door-right"></div>
+      <div class="hero-ornament ornament-top">✦</div>
+      <div class="hero-content">
+        <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+        <div class="eyebrow reveal">THE NIKAH OF</div>
+        <h1 class="hero-names">
+          <span class="gold-text reveal-word script-name">Jamal Kaliba Ashik Ali</span>
+          <span class="amp">&amp;</span>
+          <span class="violet-text reveal-word script-name">Arshul Sugaral Shifana</span>
+        </h1>
+        <p class="hero-date reveal">15 · 11 · 2026 &nbsp; • &nbsp; 10:00 AM</p>
+        <button class="enter-btn" id="enterBtn">OPEN INVITATION <span>→</span></button>
+      </div>
+      <div class="scroll-cue">SCROLL <span>↓</span></div>
+    </section>
+
+  <section class="name-section groom-section reveal-section">
+      <div class="arch-glow"></div>
+      <div class="royal-frame">
+        <div class="frame-corner c1"></div><div class="frame-corner c2"></div>
+        <div class="frame-corner c3"></div><div class="frame-corner c4"></div>
+        <div class="photo-slot" data-image="assets/groom/groom.jpg">
+          <img src="assets/groom/groom.jpg" alt="Groom" />
+        </div>
+        <div class="name-copy">
+          <span class="small-label">THE GROOM</span>
+          <h2>Jamal Kaliba<br><em>Ashik Ali</em></h2>
+          <div class="gold-line"></div>
+          <p>With gratitude, grace &amp; the blessings of Allah</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="transition-section">
+      <div class="orb orb-gold"></div>
+
+      <div class="transition-dua" aria-label="Nikah dua">
+        <div class="transition-dua-arabic" lang="ar" dir="rtl">
+          رَبَّنَا هَبْ لَنَا مِنْ أَزْوَاجِنَا وَذُرِّيَّاتِنَا قُرَّةَ أَعْيُنٍ وَاجْعَلْنَا لِلْمُتَّقِينَ إِمَامًا
+        </div>
+
+        <div class="transition-dua-meaning">
+          “Our Lord, grant us from among our wives and offspring comfort to our eyes<br class="dua-break">
+          and make us an example for the righteous.”
+        </div>
+
+        <div class="transition-dua-reference">Qur'an 25:74</div>
+      </div>
+
+      <div class="transition-name">Ashik <span>♥</span> Shifana</div>
+    </section>
+
+    <section class="name-section bride-section reveal-section">
+      <div class="arch-glow"></div>
+      <div class="royal-frame">
+        <div class="frame-corner c1"></div><div class="frame-corner c2"></div>
+        <div class="frame-corner c3"></div><div class="frame-corner c4"></div>
+        <div class="photo-slot" data-image="assets/bride/bride.jpg">
+          <img src="assets/bride/bride.jpg" alt="Bride" />
+        </div>
+        <div class="name-copy">
+          <span class="small-label">THE BRIDE</span>
+          <h2>Arshul Sugaral<br><em>Shifana</em></h2>
+          <div class="gold-line"></div>
+          <p>A beautiful beginning, written by Allah</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="details-section reveal-section" id="nikah-details">
+      <div class="geometric" aria-hidden="true"></div>
+      <div class="section-heading">
+        <span>THE SACRED DAY</span>
+        <h2>Nikah</h2>
+      </div>
+      <div class="details-grid">
+        <div class="detail-card"><span class="icon">◈</span><small>DATE</small><strong>15 NOVEMBER<br>2026</strong><em>SUNDAY</em></div>
+        <div class="detail-card featured"><span class="icon">◷</span><small>TIME</small><strong>10:00<br>AM</strong><em>IN SHAA ALLAH</em></div>
+        <div class="detail-card"><span class="icon">⌖</span><small>VENUE</small><strong>Malukkamaliyar<br>Jumma Masjid</strong><em>MADRASA VEERAVANALLUR</em></div>
+      </div>
+    </section>
+
+    <section class="mosque-section reveal-section">
+      <div class="mosque-media photo-slot" data-image="assets/mosque/mosque.jpg">
+        <img src="assets/mosque/mosque.jpg" alt="Venue mosque" />
+      </div>
+      <div class="mosque-overlay"></div>
+      <div class="mosque-copy">
+        <span class="small-label">OUR VENUE</span>
+        <h2>Malukkamaliyar<br><em>Jumma Masjid</em></h2>
+        <p>Madrasa Veeravanallur</p>
+        <a class="gold-btn" href="https://www.google.com/maps/search/?api=1&query=Malukkamaliyar+Jumma+Masjid+Madrasa+Veeravanallur" target="_blank" rel="noopener">VIEW LOCATION <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="gallery-section reveal-section">
+      <div class="section-heading">
+        <span>A FEW MOMENTS</span>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery-card photo-slot" data-image="assets/gallery/01.jpg"><img src="assets/gallery/01.jpg" alt="Gallery 1"></div>
+        <div class="gallery-card photo-slot" data-image="assets/gallery/02.jpg"><img src="assets/gallery/02.jpg" alt="Gallery 2"></div>
+        <div class="gallery-card photo-slot" data-image="assets/gallery/03.jpg"><img src="assets/gallery/03.jpg" alt="Gallery 3"></div>
+      </div>
+    </section>
+
+
+    <section class="countdown-section reveal-section" id="countdown">
+      <div class="countdown-orb countdown-orb-1"></div>
+      <div class="countdown-orb countdown-orb-2"></div>
+      <div class="countdown-inner">
+        <div class="countdown-kicker">THE MOMENT AWAITS</div>
+        <h2 class="countdown-title">Countdown</h2>
+        <div class="countdown-grid">
+          <div class="countdown-card"><strong id="days">00</strong><span>DAYS</span></div>
+          <div class="countdown-card"><strong id="hours">00</strong><span>HOURS</span></div>
+          <div class="countdown-card"><strong id="minutes">00</strong><span>MINUTES</span></div>
+          <div class="countdown-card"><strong id="seconds">00</strong><span>SECONDS</span></div>
+        </div>
+        <p class="countdown-note">Until our Nikah, In Shaa Allah · 15 November 2026 · 10:00 AM</p>
+        <div class="countdown-heart">♥</div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="footer-monogram">A <span>♥</span> S</div>
+      <div>JAMAL KALIBA ASHIK ALI &amp; ARSHUL SUGARAL SHIFANA</div>
+      <small>15 · 11 · 2026</small>
+    </footer>
+  </main>
+
+  <audio id="bgMusic" loop autoplay preload="auto" playsinline>
+    <source src="assets/music/background.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
